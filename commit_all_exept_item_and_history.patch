@@ -1,0 +1,1981 @@
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/.idea/.gitignore	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/.idea/misc.xml	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/.idea/modules.xml	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/untitled5.iml" filepath="$PROJECT_DIR$/untitled5.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/.idea/uiDesigner.xml	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+Index: src/Aiming.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Aiming.java b/src/Aiming.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/Aiming.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,147 @@
++//import java.awt.*;
++//import java.awt.geom.AffineTransform;
++//import java.awt.geom.Line2D;
++//
++//public class Aiming {
++//    private double secondX;
++//    private double secondY;
++//    private double vecX = 0;
++//    private double vecY = 0;
++//
++//    private double x;
++//    private double y;
++//    private Game game;
++//    public Aiming(double x, double y , Game game) {
++//        this.x = x;
++//        this.y = y;
++//        this.secondX = x;
++//        this.secondY = y;
++//        this.game = game;
++//    }
++//    public void paint(Graphics g){
++//        g.setColor(Color.BLACK);
++//
++//        g.fillOval((int) (x-8), (int) (y-8), 16 , 16);
++//        g.fillOval((int) (secondX-8), (int) (secondY-8), 16 , 16);
++//
++////        int[] xs = new int[2];
++////        xs[0] = (int) x;
++////        xs[1] = (int) secondX;
++////        int[] ys = new int[2];
++////        ys[0] = (int) y;
++////        ys[1] = (int) secondY;
++////        g.fillPolygon(new Polygon(xs , ys , 2));
++//
++//    //    g.drawLine((int) x, (int) y, (int) secondX, (int) secondY);
++//
++////        Line2D.Double line = new Line2D.Double(x, y, secondX, secondY);
++////        Polygon arrowHead = new Polygon();
++////        arrowHead.addPoint((int) x, (int) (y+5));
++////        arrowHead.addPoint((int) (x-5), (int) (y-5));
++////        arrowHead.addPoint((int) (x+5), (int) (y-5));
++////
++////        AffineTransform tx = new AffineTransform();
++////        double angle = Math.atan2(line.y2 - line.y1, line.x2 - line.x1);
++////        tx.translate(line.x2, line.y2);
++////        tx.rotate(angle - Math.PI / 2d);
++////
++////        Graphics2D g2d = (Graphics2D) g.create();
++////        g2d.setTransform(tx);
++////        g2d.fill(arrowHead);
++//    }
++//    private boolean accident(){
++//        if(secondX <= 10 || secondX >= MainFrame.MENU_WIDTH - 25){
++//            vecX = 0;
++//            vecY = 0;
++//            return true;
++//        }
++//        if(secondY <= 15){
++//            vecX = 0;
++//            vecY = 0;
++//            return true;
++//        }
++//        if(secondY >= MainFrame.MENU_HEIGHT - 50 ){
++//            vecX = 0;
++//            vecY = 0;
++//            return true;
++//        }
++//
++//        for(Brick brick : game.getBricks()){
++//            if(this.getBounds().intersects(( brick).getBounds())){
++//                vecX = 0;
++//                vecY = 0;
++//                return true;
++//            }
++//        }
++//        return false;
++//    }
++//    public void update(){
++//        secondX = x;
++//        secondY = y;
++//        PointerInfo pointerInfo = MouseInfo.getPointerInfo();
++//        Point mouseLocation = pointerInfo.getLocation();
++//        int posX = (int) mouseLocation.getX();
++//        int posY = (int) mouseLocation.getY();
++//        int norm = (int) Math.sqrt((posX - game.getMouseHandler().getPosX())*(posX - game.getMouseHandler().getPosX()) +
++//                (posY - game.getMouseHandler().getFirstY())*(posY - game.getMouseHandler().getFirstY()));
++//        if (norm != 0) {
++//            setVecX((-(posX - game.getMouseHandler().getFirstX()) * 8 / norm)*100);
++//            setVecY((-(posY - game.getMouseHandler().getFirstY()) * 8 / norm)*100);
++//        }
++//        while (!accident()){
++//            secondX += vecX;
++//            secondY += vecY;
++//        }
++//        secondX = x;
++//        secondY = y;
++////        secondY += vecX;
++////        secondY += vecY;
++////        if(secondX <= 10+40 || secondX >= MainFrame.MENU_WIDTH - 25 - 40){
++////            vecX = 0;
++////            vecY = 0;
++////        }
++////        if(secondY <= 15 + 40){
++////            vecX = 0;
++////            vecY = 0;
++////        }
++////        if(secondY >= MainFrame.MENU_HEIGHT - 50 - 40 ){
++////            vecX = 0;
++////            vecY = 0;
++////        }
++////
++////        for(Brick brick : game.getBricks()){
++////            if(this.getBounds().intersects(( brick).getBounds())){
++////                vecX = 0;
++////                vecY = 0;
++////            }
++////        }
++//    }
++//
++//    public double getX() {
++//        return x;
++//    }
++//
++//    public double getY() {
++//        return y;
++//    }
++//
++//    public Rectangle getBounds(){
++//        return new Rectangle((int) (secondX - 8), (int) (secondY - 8), 16 , 16);
++//    }
++//
++//    public double getVecX() {
++//        return vecX;
++//    }
++//
++//    public void setVecX(double vecX) {
++//        this.vecX = vecX;
++//    }
++//
++//    public double getVecY() {
++//        return vecY;
++//    }
++//
++//    public void setVecY(double vecY) {
++//        this.vecY = vecY;
++//    }
++//}
+Index: src/Ball.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Ball.java b/src/Ball.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/Ball.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,95 @@
++import java.awt.*;
++
++public class Ball {
++    private boolean firstMove = false;
++    private double vecX = 0;
++    private double vecY = 0;
++    private Color color;
++    private double x;
++    private double y;
++    private double radius;
++    private Game game;
++    private int num;
++    public Ball(double x, double y , double r , Game game , int num , Color color) {
++        this.x = x;
++        this.y = y;
++        this.radius = r;
++        this.game = game;
++        this.num = num;
++        this.color = color;
++    }
++    public void paint(Graphics g){
++        g.setColor(color);
++        g.fillOval((int) (x - radius), (int) (y - radius), (int) (2 * radius), (int) (2 * radius));
++    }
++    public void update(){
++        if (!firstMove && correctDistance()){
++            firstMove = true;
++        }
++        if(firstMove) {
++            x += vecX;
++            y += vecY;
++        }
++        if(x <= 10 || x >= MainFrame.MENU_WIDTH - 25){
++            vecX = -vecX;
++        }
++        if(y <= 15){
++            vecY = -vecY;
++        }
++        if(y >= MainFrame.MENU_HEIGHT - 50 ){
++            game.getBalls().remove(this);
++            if (game.getBalls().size() == 0){
++                game.setLastX(x);
++                game.changeRound();
++            }
++        }
++
++        for(Brick brick : game.getBricks()){
++                if(this.getBounds().intersects(( brick).getBounds())){
++                    (brick).setNumber((brick).getNumber()-1);
++                    vecX = -vecX;
++                    vecY = -vecY;
++                }
++        }
++    }
++    public boolean correctDistance(){
++        if (num == 0){
++            return true;
++        }else if ((x-game.getBalls().get(num-1).getX())*(x-game.getBalls().get(num-1).getX()) + (y-game.getBalls().get(num-1).getY())*(y-game.getBalls().get(num-1).getY()) >= 3*radius*radius){
++            return true;
++        }
++        return false;
++    }
++
++    public double getX() {
++        return x;
++    }
++
++    public double getY() {
++        return y;
++    }
++
++    public Rectangle getBounds(){
++        return new Rectangle((int) (x - radius), (int) (y - radius), (int) (2 * radius), (int) (2 * radius));
++    }
++
++    public double getVecX() {
++        return vecX;
++    }
++
++    public void setVecX(double vecX) {
++        this.vecX = vecX;
++    }
++
++    public double getVecY() {
++        return vecY;
++    }
++
++    public void setVecY(double vecY) {
++        this.vecY = vecY;
++    }
++
++    public double getRadius() {
++        return radius;
++    }
++}
+Index: src/Brick.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Brick.java b/src/Brick.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/Brick.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,73 @@
++import java.awt.*;
++
++public class Brick {
++    private Game game;
++    private double x;
++    private double y;
++    private double width;
++    private double height;
++    private int number;
++    private double vecY = 0;
++    private int score;
++    public Brick(double x, double y, double width, double height , int number , Game game ) {
++        this.x = x;
++        this.y = y;
++        this.width = width;
++        this.height = height;
++        this.number = number;
++        this.score = number;
++        this.game = game;
++        if(game.getState().equalsIgnoreCase("Easy")){
++            vecY = 0.2;
++        } else if (game.getState().equalsIgnoreCase("Normal")) {
++            vecY = 0.35;
++        } else if (game.getState().equalsIgnoreCase("Hard")) {
++            vecY = 0.5;
++        }
++    }
++
++    public void paint(Graphics g){
++        g.setColor(Color.BLACK);
++        g.fillRect((int) x, (int) y, (int) width, (int) height);
++        g.setColor(Color.red);
++        g.drawString(String.valueOf(number), (int) (x + width/2) , (int) (y + height/2));
++    }
++
++    public void update(){
++        if(y > MainFrame.MENU_HEIGHT - 190){
++            game.gameOver();
++        }
++        if (!game.getCondition().equals("Sending_Ball") && !game.getCondition().equals("Game_Over")) {
++            y += vecY;
++        }
++        if(number <= 0){
++            if (score > game.getElapsedTime()/30);
++            game.setScore((int) (game.getScore() + score - game.getElapsedTime()/30));
++            game.getBricks().remove(this);
++            y+=60;
++        }
++    }
++    public Rectangle getBounds(){
++        return  new Rectangle((int) x, (int) y, (int) width, (int) height);
++    }
++
++    public int getNumber() {
++        return number;
++    }
++
++    public void setNumber(int number) {
++        this.number = number;
++    }
++
++    public double getY() {
++        return y;
++    }
++
++    public void setY(double y) {
++        this.y = y;
++    }
++
++    public double getHeight() {
++        return height;
++    }
++}
+Index: src/Game.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Game.java b/src/Game.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/Game.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,312 @@
++import javax.swing.*;
++import java.awt.*;
++import java.awt.event.KeyEvent;
++import java.awt.event.KeyListener;
++import java.util.LinkedList;
++import java.util.Random;
++
++public class Game extends JPanel implements Runnable {
++    private int score = 0;
++
++    private boolean paused = false;
++    private int numberOfBrick;
++    private int round = 1;
++    private double lastX = MainFrame.MENU_WIDTH/2;
++
++    private LinkedList<Ball> balls = new LinkedList<>();
++    private LinkedList<Brick> bricks = new LinkedList<>();
++
++    //Before_Aiming, Aiming , Sending_Ball , Collision , Game_Over
++    private String condition = "Before_Aiming";
++    private boolean running = false;
++    private Brick minBrick;
++    private Color color;
++    private String name;
++    private String state;
++    private double rate;
++    private long startTime;
++    private long endTime;
++    private long elapsedTime;
++    private long remainingTime;
++    private long sigmaTime = 0;
++    private MouseHandler mouseHandler;
++    private double secondX;
++    private double secondY;
++    private boolean gameOver = false;
++    public Game(Color color , String name , String state){
++        this.color = color;
++        this.name = name;
++        this.state = state;
++        init();
++        this.setSize(1080, 771);
++        this.setLayout(null);
++        this.setFocusable(true);
++        this.requestFocus();
++        this.requestFocusInWindow();
++        this.start();
++    }
++    public void changeRound(){
++        condition = "Before_Aiming";
++
++        round++;
++        for (int i = 0; i < round; i++){
++            balls.add(new Ball(lastX , MainFrame.MENU_HEIGHT - 150+15 , 15 , this , i , color));
++        }
++        for (int i = 0; i < bricks.size(); i++){
++            Brick brick = bricks.get(i);
++            brick.setY(brick.getY() + brick.getHeight());
++        }
++    }
++    public void init(){
++        if (state.equalsIgnoreCase("Easy")){
++            numberOfBrick = 2;
++            rate = 0.6;
++        } else if (state.equalsIgnoreCase("Normal")) {
++            numberOfBrick = 3;
++            rate = 1.1;
++        } else if (state.equalsIgnoreCase("Hard")) {
++            numberOfBrick = 4;
++            rate = 1.6;
++        }
++        for (int i = 0; i < numberOfBrick; i++){
++            Brick brick = new Brick(new Random().nextInt(MainFrame.MENU_WIDTH/numberOfBrick - 50)+
++                    MainFrame.MENU_WIDTH/numberOfBrick*i, 0 , 60 , 40 , 1 , this);
++            bricks.add(brick);
++            minBrick = brick;
++        }
++        Ball ball = new Ball(lastX , MainFrame.MENU_HEIGHT - 150 + 15, 15 , this , 0 , color);
++        balls.add(ball);
++    }
++    public synchronized void start(){
++        if(running){
++            return;
++        }
++        running = true;
++        Thread thread = new Thread(this , "Thread");
++        thread.start();
++    }
++    public synchronized void stop(){
++        if(!running){
++            return;
++        }
++        running = false;
++    }
++
++    @Override
++    public void run() {
++        mouseHandler = new MouseHandler(this);
++        addMouseListener(mouseHandler);
++        addKeyListener(new KeyListener() {
++            @Override
++            public void keyTyped(KeyEvent e) {
++
++            }
++
++            @Override
++            public void keyPressed(KeyEvent e) {
++                int key = e.getKeyCode();
++                if (key == KeyEvent.VK_ENTER){
++                    paused =! paused;
++                }
++            }
++
++            @Override
++            public void keyReleased(KeyEvent e) {
++
++            }
++        });
++        this.setFocusable(true);
++        this.requestFocus();
++        this.requestFocusInWindow();
++        startTime = System.nanoTime()/1000000000L;
++        long lastTime = System.nanoTime();
++        long timer = System.currentTimeMillis();
++        double delta = 0.0;
++        double ns = 1000000000.0/60.0;
++        int frames = 0;
++        int updates = 0;
++        while (running){
++            long now = System.nanoTime();
++            delta += (now-lastTime)/ns;
++            lastTime = now;
++            while (delta >= 1){
++                try {
++                    update();
++                } catch (AWTException e) {
++                    throw new RuntimeException(e);
++                }
++                updates++;
++                delta--;
++            }
++            repaint();
++            frames++;
++            if(System.currentTimeMillis() - timer > 1000){
++                timer += 1000;
++                frames = 0;
++                updates = 0;
++            }
++        }
++        stop();
++    }
++
++    @Override
++    public void paint(Graphics g) {
++        super.paint(g);
++        g.drawString(name , 20 , MainFrame.MENU_HEIGHT - 100);
++        g.drawString( "Time : " + String.valueOf(elapsedTime), 140 , MainFrame.MENU_HEIGHT - 100 );
++        g.drawString("Score : " + score , 210 , MainFrame.MENU_HEIGHT - 100);
++        for (int i = 0 ; i < balls.size(); i++) {
++            balls.get(i).paint(g);
++        }
++        for (int i = 0 ; i < bricks.size(); i++) {
++            bricks.get(i).paint(g);
++        }
++        if(condition == "Aiming" && MainFrame.isAim()){
++            g.setColor(Color.BLACK);
++            g.fillOval((int) (getMouseHandler().getFirstX()-8), (int) (getMouseHandler().getFirstY()-8), 16 , 16);
++            g.fillOval((int) (secondX-8), (int) (secondY-8), 16 , 16);
++            g.drawLine((getMouseHandler().getFirstX()) ,(getMouseHandler().getFirstY()) , (int) (secondX), (int) (secondY));
++        }
++        if (gameOver){
++            g.setFont(new Font("Courier", Font.BOLD, 20));
++            g.setColor(Color.RED);
++            g.drawString("Game Over" , MainFrame.MENU_WIDTH/2 , MainFrame.MENU_HEIGHT/2);
++            MainFrame.getInstance().setContentPane(new GameOverPanel(state , color , name));
++
++        }
++    }
++    public void gameOver(){
++        paused = true;
++        gameOver = true;
++        if (MainFrame.isSave()){
++
++        }
++    }
++    public void update() throws AWTException {
++        if(!paused) {
++            endTime = System.nanoTime() / 1000000000L;
++            elapsedTime = endTime - startTime + sigmaTime;
++
++            for (int i = 0; i < balls.size(); i++) {
++                balls.get(i).update();
++            }
++            for (int i = 0; i < bricks.size(); i++) {
++                bricks.get(i).update();
++            }
++
++            if(condition == "Aiming" && MainFrame.isAim()){
++                double vecX = 0;
++                double vecY = 0;
++
++                PointerInfo pointerInfo = MouseInfo.getPointerInfo();
++                Point screenLocation = pointerInfo.getLocation();
++                Point componentLocation = MainFrame.getInstance().getLocationOnScreen();
++                int xRelativeToComponent = (int) (screenLocation.getX() - componentLocation.getX())-7;
++                int yRelativeToComponent = (int) (screenLocation.getY() - componentLocation.getY())-30;
++                secondX = getMouseHandler().getFirstX();
++                secondY = getMouseHandler().getFirstY();
++                int norm = (int) Math.sqrt((xRelativeToComponent - secondX)*(xRelativeToComponent - secondX) +
++                        (yRelativeToComponent - secondY)*(yRelativeToComponent - secondY));
++                if (norm != 0) {
++                    vecX = (-(xRelativeToComponent - secondX) * 8 / norm);
++                    vecY = (-(yRelativeToComponent - secondY) * 8 / norm);
++                    boolean accident = false;
++                    while (! accident){
++                        if ((secondX <= 15 || secondX >= MainFrame.MENU_WIDTH - 30 ||
++                                secondY <= 15 || secondY >= MainFrame.MENU_HEIGHT - 50)){
++                            vecX = 0;
++                            vecY = 0;
++                            accident = true;
++                        }else {
++                            for(Brick brick : getBricks()){
++                                if((new Rectangle((int) (secondX - 8), (int) (secondY - 8), 16 , 16)).getBounds().intersects(( brick).getBounds())){
++                                    vecX = 0;
++                                    vecY = 0;
++                                    accident = true;
++                                }
++                            }
++                        }
++                        secondX += vecX;
++                        secondY += vecY;
++                    }
++                }
++
++
++//                secondX = getMouseHandler().getFirstX();
++//                secondY = getMouseHandler().getFirstY();
++//                PointerInfo pointerInfo = MouseInfo.getPointerInfo();
++//                Point mouseLocation = pointerInfo.getLocation();
++//                int posX = (int) mouseLocation.getX();
++//                int posY = (int) mouseLocation.getY();
++////                System.out.println("posX " + posX);
++////                System.out.println("posY " + posY);
++//                int norm = (int) Math.sqrt((posX - getMouseHandler().getPosX())*(posX - getMouseHandler().getPosX()) +
++//                        (posY - getMouseHandler().getPosY())*(posY - getMouseHandler().getPosY()));
++//                if (norm != 0) {
++//                    vecX = (-(posX - getMouseHandler().getPosX()) * 8 / norm);
++//                    vecY = (-(posY - getMouseHandler().getPosY()) * 8 / norm);
++//                }
++//                secondX = getMouseHandler().getFirstX();
++//                secondY = getMouseHandler().getFirstY();
++//                while (! (secondX <= 10 || secondX >= MainFrame.MENU_WIDTH - 25 ||
++//                        secondY <= 15 || secondY >= MainFrame.MENU_HEIGHT - 50)){
++//                    secondX += vecX;
++//                    secondY += vecY;
++//                }
++            }
++
++            if (minBrick.getY() > 75) {
++                for (int i = 0; i < numberOfBrick; i++) {
++                    Brick brick = new Brick(new Random().nextInt(MainFrame.MENU_WIDTH/numberOfBrick - 50)+
++                            MainFrame.MENU_WIDTH/numberOfBrick*i, 0, 60, 40, (int) (round * rate), this);
++                    bricks.add(brick);
++                    minBrick = brick;
++                }
++            }
++        }else {
++            sigmaTime = elapsedTime;
++            startTime = System.nanoTime()/1000000000L;
++        }
++    }
++
++    public LinkedList<Ball> getBalls() {
++        return balls;
++    }
++
++    public LinkedList<Brick> getBricks() {
++        return bricks;
++    }
++
++    public String getCondition() {
++        return condition;
++    }
++
++    public void setCondition(String condition) {
++        this.condition = condition;
++    }
++
++    public String getState() {
++        return state;
++    }
++
++    public void setLastX(double lastX) {
++        this.lastX = lastX;
++    }
++
++
++    public MouseHandler getMouseHandler() {
++        return mouseHandler;
++    }
++
++    public int getScore() {
++        return score;
++    }
++
++    public void setScore(int score) {
++        this.score = score;
++    }
++
++    public long getElapsedTime() {
++        return elapsedTime;
++    }
++}
+Index: src/GameOverPanel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/GameOverPanel.java b/src/GameOverPanel.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/GameOverPanel.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,65 @@
++import javax.swing.*;
++import java.awt.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++
++public class GameOverPanel extends JPanel implements ActionListener {
++    private JButton playAgain;
++    private JButton backToGamePreparationPanel;
++    private JButton backToMainMenu;
++    private String state;
++    private Color color;
++    private String name;
++    private JLabel gameOver;
++    public GameOverPanel(String state , Color color , String name){
++        this.setSize(1080,771);
++        this.setLayout(null);
++        this.setFocusable(true);
++        this.requestFocus();
++        this.requestFocusInWindow();
++
++        this.state = state;
++        this.color = color;
++        this.name = name;
++
++        playAgain = new JButton("Play Again");
++        this.add(playAgain);
++        playAgain.setBounds(460,100,260, 80);
++        playAgain.setFocusable(false);
++        playAgain.addActionListener(this);
++
++        backToGamePreparationPanel = new JButton("Back To Preparation Panel");
++        this.add(backToGamePreparationPanel);
++        backToGamePreparationPanel.setBounds(460,250,260, 80);
++        backToGamePreparationPanel.setFocusable(false);
++        backToGamePreparationPanel.addActionListener(this);
++
++        backToMainMenu = new JButton("Back To Main Menu");
++        this.add(backToMainMenu);
++        backToMainMenu.setBounds(460,400,260, 80);
++        backToMainMenu.setFocusable(false);
++        backToMainMenu.addActionListener(this);
++
++        gameOver = new JLabel();
++        gameOver.setBounds(400 , 60 , 400 , 40);
++        this.add(gameOver);
++        gameOver.setText("Waisted");
++        gameOver.setForeground(Color.RED);
++        gameOver.setFont(gameOver.getFont().deriveFont(24.0f));
++    }
++
++    @Override
++    public void actionPerformed(ActionEvent e) {
++        if (e.getSource().equals(playAgain)){
++            Game game = new Game(color , name , state);
++            MainFrame.getInstance().setContentPane(game);
++            game.setFocusable(true);
++            game.requestFocus();
++            game.requestFocusInWindow();
++        } else if (e.getSource().equals(backToGamePreparationPanel)) {
++            MainFrame.getInstance().setContentPane(new GamePreparationPanel());
++        } else if (e.getSource().equals(backToMainMenu)) {
++            MainFrame.getInstance().setContentPane(new StartPanel());
++        }
++    }
++}
+Index: src/GamePreparationPanel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/GamePreparationPanel.java b/src/GamePreparationPanel.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/GamePreparationPanel.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,186 @@
++import javax.swing.*;
++import java.awt.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++
++public class GamePreparationPanel extends JPanel implements ActionListener {
++    private JButton start;
++    private JButton save;
++    private TextField nameOfPlayer;
++    private JLabel colp;
++    private Button pickColor;
++    private JLabel selectMode;
++    private ButtonGroup gameMode;
++    private JRadioButton easy;
++    private JRadioButton normal;
++    private JRadioButton hard;
++    private String state;
++    private Color color;
++    private String name;
++    private JButton back;
++
++    public  GamePreparationPanel(){
++        this.setSize(1080,771);
++        this.setLayout(null);
++        this.setFocusable(true);
++        this.requestFocus();
++        this.requestFocusInWindow();
++
++        selectMode = new JLabel("Select Mode");
++        selectMode.setBounds(440 , 40 , 200 , 40);
++        this.add(selectMode);
++        selectMode.setForeground(Color.BLUE);
++        selectMode.setFont(selectMode.getFont().deriveFont(24.0f));
++        //        inst1.setBounds(40,180,420,30);
++//        this.add(inst1);
++//        inst1.setForeground(Color.BLUE);
++
++        gameMode = new ButtonGroup();
++
++        easy = new JRadioButton("easy");
++        easy.setBounds(230 , 100 , 240 , 40);
++        this.add(easy);
++        normal = new JRadioButton("normal");
++        normal.setBounds(500 , 100 , 240 , 40);
++        this.add(normal);
++        hard = new JRadioButton("hard");
++        hard.setBounds(770 , 100 , 240 , 40);
++        this.add(hard);
++        easy.setFont(easy.getFont().deriveFont(24.0f));
++        normal.setFont(normal.getFont().deriveFont(24.0f));
++        hard.setFont(hard.getFont().deriveFont(24.0f));
++        gameMode.add(easy);
++        gameMode.add(normal);
++        gameMode.add(hard);
++
++        colp = new JLabel();
++        colp.setBounds(400 , 260 , 400 , 40);
++        this.add(colp);
++        colp.setText("Select Colour Player :D");
++        colp.setForeground(Color.PINK);
++        colp.setFont(colp.getFont().deriveFont(24.0f));
++
++        pickColor = new Button("Pick a color");
++        this.add(pickColor);
++        pickColor.setBounds(80 , 260 , 120 , 40);
++        pickColor.setFocusable(false);
++        pickColor.addActionListener(this);
++        pickColor.setBackground(Color.PINK);
++
++        start = new JButton("Start new game !");
++        this.add(start);
++        start.setBounds(440, 570, 200, 50);
++        start.setFocusable(false);
++        start.addActionListener(this);
++
++        nameOfPlayer = new TextField("Enter your name");
++        this.add(nameOfPlayer);
++        nameOfPlayer.setBounds(230,420,650,60);
++
++        save = new JButton("save");
++        this.add(save);
++        save.setBounds(80,426,120,40);
++        save.setFocusable(false);
++        save.addActionListener(this);
++
++
++        back = new JButton("Back");
++        this.add(back);
++        back.setBounds(440 , 640 , 200 , 50);
++        back.setFocusable(false);
++        back.addActionListener(this);
++    }
++
++//    @Override
++//    public void actionPerformed(ActionEvent e) {
++//        if(e.getSource().equals(start)){
++//            if(q1 == false || q2 == false){
++//                if(q2 == true){
++//                    JOptionPane.showMessageDialog(this, "click on save for player 1");
++//                }
++//                else if(q1 == true){
++//                    JOptionPane.showMessageDialog(this, "click on save for player 2");
++//                }
++//                else{
++//                    JOptionPane.showMessageDialog(this, "click on save for player 1 & 2");
++//                }
++//            }
++//            else {
++//                if (!f1) {
++//                    JOptionPane.showMessageDialog(this, "Select colour of player 1");
++//                } else if (!f2) {
++//                    JOptionPane.showMessageDialog(this, "Select colour of player 2");
++//                } else {
++//                    dispose();
++//                    AirHockey airHockey = new AirHockey();
++//                    airHockey.setVisible(true);
++//                }
++//            }
++//        }
++//        else if(e.getSource().equals(save)) {
++//            //AirHockey.players.get(AirHockey.numberOfGames + 1).get(0) = nameOfPlayer.getText();
++//            linkedList.add(nameOfPlayer.getText());
++//            q1 = true;
++//
++//        }
++//        else if (e.getSource().equals(button2)) {
++//            linkedList.add(textField2.getText());
++//            q2 = true;
++//            AirHockkey.players.add(linkedList);
++//        }
++//        else if (e.getSource().equals(back)) {
++//            dispose();
++//            Frame21 frame21 = new Frame21();
++//            frame21.setVisible(true);
++//        }
++//        else if(e.getSource().equals(pickColor)){
++//            JColorChooser colorChooser = new JColorChooser();
++//            Color color = JColorChooser.showDialog(null, "Color Player1" , Color.BLACK);
++//            Frame31.color = color;
++//            colp.setForeground(color);
++//            f1 =true;
++//        }
++//        else if(e.getSource().equals(colop2)){
++//            JColorChooser colorChooser = new JColorChooser();
++//            Color color = JColorChooser.showDialog(null, "Color Player2" , Color.BLACK);
++//            Frame31.colorP2 = color;
++//            colp2.setForeground(color);
++//            f2 = true;
++//        }
++//    }
++
++    @Override
++    public void actionPerformed(ActionEvent e) {
++        if (easy.isSelected()){
++            state = "Easy";
++        } else if (normal.isSelected()) {
++            state = "Normal";
++        } else if (hard.isSelected()) {
++            state = "Hard";
++        }
++        if(e.getSource().equals(pickColor)){
++            JColorChooser colorChooser = new JColorChooser();
++            color = JColorChooser.showDialog(null, "Color Player1" , Color.BLACK);
++            colp.setForeground(color);
++            pickColor.setBackground(color);
++        } else if (e.getSource().equals(save)) {
++            name = nameOfPlayer.getText();
++        } else if (e.getSource().equals(start)) {
++            if (name == null){
++                JOptionPane.showMessageDialog(this, "Enter your name");
++            } else if (state == null) {
++                JOptionPane.showMessageDialog(this, "Select the mode");
++            } else if (color == null) {
++                JOptionPane.showMessageDialog(this, "Select the colour");
++            } else {
++                Game game = new Game(color , name , state);
++                MainFrame.getInstance().setContentPane(game);
++                game.setFocusable(true);
++                game.requestFocus();
++                game.requestFocusInWindow();
++            }
++        }else if (e.getSource().equals(back)){
++            MainFrame.getInstance().setContentPane(new StartPanel());
++        }
++    }
++}
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/Main.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,5 @@
++public class Main {
++    public static void main(String[] args) {
++        new MainFrame();
++    }
++}
+\ No newline at end of file
+Index: src/MainFrame.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/MainFrame.java b/src/MainFrame.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/MainFrame.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,76 @@
++import javax.swing.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++import java.io.IOException;
++
++public class MainFrame extends JFrame implements ActionListener {
++    private static MainFrame instance;
++    private StartPanel startPanel;
++    public static final int MENU_WIDTH = 1080;
++    public static final int MENU_HEIGHT = 771;
++    private static boolean save = false;
++    private static boolean music = false;
++    private static boolean aim = false;
++
++    public MainFrame() {
++        this.setSize(1080 , 771);
++        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
++        this.setResizable(false);
++        this.setLocationRelativeTo(null);
++        this.setLayout(null);
++        startPanel = new StartPanel();
++        this.setContentPane(startPanel);
++        instance = this;
++        this.setVisible(true);
++
++
++
++    }
++    @Override
++    public void actionPerformed(ActionEvent e) {
++
++    }
++
++    public static void setInstance(MainFrame instance) {
++        MainFrame.instance = instance;
++    }
++
++    public StartPanel getStartPanel() {
++        return startPanel;
++    }
++
++    public void setStartPanel(StartPanel startPanel) {
++        this.startPanel = startPanel;
++    }
++
++    public static boolean isSave() {
++        return save;
++    }
++
++    public static void setSave(boolean save) {
++        MainFrame.save = save;
++    }
++
++    public static boolean isMusic() {
++        return music;
++    }
++
++    public static void setMusic(boolean music) {
++        MainFrame.music = music;
++    }
++
++    public static boolean isAim() {
++        return aim;
++    }
++
++    public static void setAim(boolean aim) {
++        MainFrame.aim = aim;
++    }
++
++    public static MainFrame getInstance() {
++        return instance;
++    }
++
++}
++
++
+Index: src/Map.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Map.java b/src/Map.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/Map.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,38 @@
++import java.awt.*;
++
++public class Map {
++
++    public int[][] map;
++    public int brickWidth;
++    public int brickHeight;
++
++    public Map(int rows, int columns) {
++        map = new int[rows][columns];
++        for (int row = 0; row < map.length; row++) {
++            for (int column = 0; column < map[0].length; column++) {
++                map[row][column] = 1;
++            }
++        }
++        brickWidth = 540 / columns;
++        brickHeight = 150 / rows;
++    }
++
++    public void draw(Graphics2D graphics) {
++        for (int row = 0; row < map.length; row++) {
++            for (int column = 0; column < map[0].length; column++) {
++                if (map[row][column] > 0) {
++                    graphics.setColor(Color.decode("#4D8AC9"));
++                    graphics.fillRoundRect(column * brickWidth + 80, row * brickHeight + 50, brickWidth, brickHeight, 10, 10);
++                    graphics.setStroke(new BasicStroke(3));
++                    graphics.setColor(Color.decode("#FFFFFF"));
++                    graphics.drawRoundRect(column * brickWidth + 80, row * brickHeight + 50, brickWidth, brickHeight, 10, 10);
++                }
++            }
++        }
++    }
++
++    public void setBrickValue(int row, int column, int value) {
++        map[row][column] = value;
++    }
++
++}
+\ No newline at end of file
+Index: src/MouseHandler.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/MouseHandler.java b/src/MouseHandler.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/MouseHandler.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,71 @@
++import java.awt.*;
++import java.awt.event.MouseEvent;
++import java.awt.event.MouseListener;
++
++public class MouseHandler implements MouseListener {
++    private Game game;
++    private int firstX;
++    private int secondX;
++    private int firstY;
++    private int secondY;
++    public MouseHandler(Game game) {
++        this.game = game;
++    }
++
++    @Override
++    public void mouseClicked(MouseEvent e) {
++
++    }
++
++    @Override
++    public void mousePressed(MouseEvent e) {
++        if (game.getCondition().equals("Before_Aiming")) {
++            firstX = e.getX();
++            firstY = e.getY();
++            game.setCondition("Aiming");
++        }
++    }
++
++    @Override
++    public void mouseReleased(MouseEvent e) {
++        if (game.getCondition().equals("Aiming")){
++            secondX = e.getX();
++            secondY = e.getY();
++            int norm = (int) Math.sqrt((secondX - firstX)*(secondX - firstX) + (secondY - firstY)*(secondY - firstY));
++            if (norm != 0) {
++                for (int i = 0 ; i < game.getBalls().size(); i++) {
++                    Ball ball = game.getBalls().get(i);
++                    ball.setVecX(-(secondX - firstX) * 8 / norm);
++                    ball.setVecY(-(secondY - firstY) * 8 / norm);
++                }
++                game.setCondition("Sending_Ball");
++            }
++        }
++    }
++
++    @Override
++    public void mouseEntered(MouseEvent e) {
++
++    }
++
++    @Override
++    public void mouseExited(MouseEvent e) {
++
++    }
++
++    public int getFirstX() {
++        return firstX;
++    }
++
++    public void setFirstX(int firstX) {
++        this.firstX = firstX;
++    }
++
++    public int getFirstY() {
++        return firstY;
++    }
++
++    public void setFirstY(int firstY) {
++        this.firstY = firstY;
++    }
++}
+Index: src/SettingPanel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/SettingPanel.java b/src/SettingPanel.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/SettingPanel.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,97 @@
++import javax.swing.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++
++public class SettingPanel extends JPanel implements ActionListener {
++    private ButtonGroup gameAim;
++    private JRadioButton aim;
++    private JRadioButton noAim;
++    private ButtonGroup gameMusic;
++    private JRadioButton music;
++    private JRadioButton noMusic;
++    private ButtonGroup gameSave;
++    private JRadioButton save;
++    private JRadioButton notSave;
++    private JButton back;
++    public SettingPanel(){
++        this.setSize(1080,771);
++        this.setLayout(null);
++        this.setFocusable(true);
++        this.requestFocus();
++        this.requestFocusInWindow();
++
++
++
++        gameAim = new ButtonGroup();
++
++        aim = new JRadioButton("aim");
++        aim.setBounds(300 , 100 , 240 , 40);
++        this.add(aim);
++        noAim = new JRadioButton("no aim");
++        noAim.setBounds(600 , 100 , 240 , 40);
++        this.add(noAim);
++        aim.setFont(aim.getFont().deriveFont(24.0f));
++        noAim.setFont(noAim.getFont().deriveFont(24.0f));
++        gameAim.add(aim);
++        gameAim.add(aim);
++
++        gameMusic = new ButtonGroup();
++
++        music = new JRadioButton("unmute");
++        music.setBounds(300 , 300 , 240 , 40);
++        this.add(music);
++        noMusic = new JRadioButton("Mute");
++        noMusic.setBounds(600 , 300 , 240 , 40);
++        this.add(noMusic);
++        music.setFont(music.getFont().deriveFont(24.0f));
++        noMusic.setFont(noMusic.getFont().deriveFont(24.0f));
++        gameMusic.add(music);
++        gameMusic.add(noMusic);
++
++        gameSave = new ButtonGroup();
++
++        save = new JRadioButton("Auto save");
++        save.setBounds(300 , 500 , 240 , 40);
++        this.add(save);
++        notSave = new JRadioButton("Dont Auto save");
++        notSave.setBounds(600 , 500 , 240 , 40);
++        this.add(notSave);
++        save.setFont(save.getFont().deriveFont(24.0f));
++        notSave.setFont(notSave.getFont().deriveFont(24.0f));
++        gameSave.add(save);
++        gameSave.add(notSave);
++
++        back = new JButton("Back");
++        this.add(back);
++        back.setBounds(460 , 600 , 140 , 80);
++        back.setFocusable(false);
++        back.addActionListener(this);
++
++
++    }
++    @Override
++    public void actionPerformed(ActionEvent e) {
++        if (aim.isSelected()){
++            MainFrame.setAim(true);
++        }
++        if (music.isSelected()){
++            MainFrame.setMusic(true);
++        }
++        if (save.isSelected()){
++            MainFrame.setSave(true);
++        }
++
++        if (noAim.isSelected()){
++            MainFrame.setAim(false);
++        }
++        if (noMusic.isSelected()){
++            MainFrame.setMusic(false);
++        }
++        if (notSave.isSelected()){
++            MainFrame.setSave(false);
++        }
++        if (e.getSource().equals(back)){
++            MainFrame.getInstance().setContentPane(new StartPanel());
++        }
++    }
++}
+Index: src/StartPanel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/StartPanel.java b/src/StartPanel.java
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/src/StartPanel.java	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,62 @@
++import javax.swing.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++public class StartPanel extends JPanel implements ActionListener {
++    private JButton startNewGame;
++    private JButton allRecords;
++    private JButton history;
++    private JButton setting;
++    private JButton exit;
++    public StartPanel(){
++        this.setSize(1080,771);
++        this.setLayout(null);
++        this.setFocusable(true);
++        this.requestFocus();
++        this.requestFocusInWindow();
++
++        startNewGame = new JButton("Start New Game");
++        this.add(startNewGame);
++        startNewGame.setBounds(460,100,160, 80);
++        startNewGame.setFocusable(false);
++        startNewGame.addActionListener(this);
++
++        allRecords = new JButton("All Records");
++        this.add(allRecords);
++        allRecords.setBounds(460 , 210 , 160 , 80);
++        allRecords.setFocusable(false);
++        allRecords.addActionListener(this);
++
++        history = new JButton("History");
++        this.add(history);
++        history.setBounds(460 , 320 , 160 , 80);
++        history.setFocusable(false);
++        history.addActionListener(this);
++
++        setting = new JButton("Setting");
++        this.add(setting);
++        setting.setBounds(460 , 430 , 160 , 80);
++        setting.setFocusable(false);
++        setting.addActionListener(this);
++
++        exit = new JButton("Exit");
++        this.add(exit);
++        exit.setBounds(460 , 540 , 160 , 80);
++        exit.setFocusable(false);
++        exit.addActionListener(this);
++    }
++
++    @Override
++    public void actionPerformed(ActionEvent e) {
++        if(e.getSource().equals(startNewGame)){
++            MainFrame.getInstance().setContentPane(new GamePreparationPanel());
++        } else if (e.getSource().equals(allRecords)) {
++        } else if (e.getSource().equals(history)) {
++            
++        } else if (e.getSource().equals(setting)) {
++            MainFrame.getInstance().setContentPane(new SettingPanel());
++        } else if (e.getSource().equals(exit)) {
++            System.exit(0);
++        }
++    }
++}
++
+Index: untitled5.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/untitled5.iml b/untitled5.iml
+new file mode 100644
+--- /dev/null	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
++++ b/untitled5.iml	(revision 5347b08d33ef4c01f5635a897a454f94e55b59cd)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/out/production/untitled5/Ball.class b/out/production/untitled5/Ball.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..ade1f3734db542c48ec8d6b41efa32bcaa1958fd
+GIT binary patch
+literal 2985
+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
+
+diff --git a/out/production/untitled5/Brick.class b/out/production/untitled5/Brick.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..daab97357235220b0a28414db449c08b7c496870
+GIT binary patch
+literal 2586
+zc${@rYjYD-7=E@%c9XCzAx&@G3M!DK*Z`uUg%;Y-HkhVJp->!!ZL&?5Zj-XvwA8x{
+zD1xFQilE>}zc`~fBse<bcl`l=_6PVI)b~BRO-qTJnRCv2f8NVE`Qx8oegm)<-v-eD
+zj{>g>A7lxkbK1O?FttKHF*<op&)O2?{YJsCdnI_HvGD->2q*}uSOZmpuirAVGZMV>
+zdUisBlw^66inT11E-<xDMOaXaOhr_*2*U*<XHPSyO+`C%<Z0c=Put8|uVMo>601<2
+zozyL|O)-13icV(xO4*{NGiR%cC-5YN&ug<f>8FQi?+IcXwkz17B8nIZhlJ3d*X=P|
+zv*{R##?s4qj@gz`$oKfsMY@Nz(qa%#qgz2j#V+iAq$G|ivGnt0%`Bzz1p+dlmB?pH
+z^l_K5({kVMxB0u{$FqblQ?zC^Q||k7N_>92Kp}@UD<}8;1@Q%N0KE$OR2;-12~EPM
+zwqPd)ie}N`f~OA+yhI4nk4h-%0VEY1RxyYn3F~U&AxoQ^HnJtEKuNb<H_g%2_OWsH
+zkWz63<laAJnC3CjekGcsk2`+=BPucs%VX&|uF_EzFXI^L%xh*@AD!Ydr0UdGKImiz
+zjxny{Bu+^P<}7VtsiJLl%EwU^oR$z6(Tu{NMQxN1UW~eqw&67uXLx4)-2Ksc-D0Mu
+zVv@VA<~i9y&ajPQ!H*nq#&jYJ`7`~RX)^jL6?sfkTbypL>Y+3K)I&ec5d<EhGfP2C
+z6|*Q%dnm|ZQ=2R4x#I>88C{VhJ~!9RtZAtz!FH#Q$5!a1STwI<0T-OMxFRoAZ=7YX
+zt9S!%Qdlw*SB%iLFHLRPHq1oYD9q@&v{ACD^>5=H1@EeOkJE|NQ=%*_eYQAH70fvB
+z6kL`Nu1x_qo6<J*ATHqpehp|0nxaYiQqHxCjT69uVvcaGCC7S3T+ZX#q)D7`x|r3>
+zam_NAc9~v#+92RcTBOh;p^+|Nc4kDIa}|7Z)L6pSx?&uc=2gU#Xf&GZ$S9riTuxkO
+zQKDkGkSnpDSo-mddK{&U`<Mhu%V#g~Cqzq<M3e;KjV3uXn+%I5iAHs-ShlkIpuwPn
+zBAafGgRS%kHBd2mrI(0K4gB_rJ?!o+?%wY1^t6e6jZ1e5IshsMuF(1+Ank#N<bWN2
+z2r1rFffC<QL1R2tK`7qttDrgFu2j$(ZwXY;A=XXtj$j2_I)YU^6^>W2^ET;6u!n5F
+zL$|};TVp>b*liAbpI`@x{UWjNQ(O<O(%O#@ttz~9-2!Mt6aAVgzYgMeVjazC7+u8K
+zjR<-v&tbIU1ls6Uw!<W?66Jc0JPgyYQ7-rhAB)kmMU5nJ;wpK>iR<JOC$5xZ!L<sA
+z6IVBg>vV2~=U;ZI!0(|?QV0iHo5|lN_|&N%ZjcrCCDZj2_E*v06@P%n>$HS;Y38N%
+zdKJSYPP^icpE1f>ERSHUm=)@*=ulOhxG(y3RbXJGn+atn{kC8`O~MFaye4EKaxL2o
+zJ|jFd%lI6!i|=o;<os`Nj0j%2b&tyb09&ef)!EL5vsLJK(78k!f(*qc98gNOBKD5E
+zI7-{5%Z}bm1jX5#_uygDVV!63*_CqrN)=^?UZg>J>!ffR!A17D-2FJ!8&umhlwFwq
+zN_Qbfe*s-cVkb_~^SOv_Tt<Sj+b!~TI(oy+n>!`L8;-BvNBo=k!p(fp&3xmpxHM6(
+zD-ZGhkF`3>Lid>!{x`b*C45O!;rL95>H<D4$oH#^pI>3@s~O+I1=qNjw7Fq&d;?vj
+z<rW78w}))@uV|}WYpX1VlLLQ++ch8!H6WoMRsrd&3*-*It^x6gn;`R553L3=KsL$$
+Y0TLEoC45sCNb71KLv?}N6<YWH158!!(f|Me
+
+diff --git a/out/production/untitled5/Game$1.class b/out/production/untitled5/Game$1.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..9bff637a32f1885e4cdba190c9ebc87f35e48983
+GIT binary patch
+literal 975
+zc$|e(U2hUW6g|T(EG*j=5nGE`QLyr%h1U91?MqWl)2$lYV8Yw5Oz4(nX_lpipQ2B`
+z`E24x<AXoIA7#BWAR(G6$<E$;=iGD7ogIGs{PrEdCN>j@Kr^6Qh$6-id&YaBxK2TM
+z><)@`3T#>0G7(3@fN3EKiy?Kw&v?z_ey8@Lbt0UQfRA0@4YwJzQn_Jb9t#Fi7Oo)8
+zu%zJpO;{6W!VhcvVzes*2D2kV%69r~p*r_WWN^*EqJ<?~XV9fO!MNjy0U4^3r9^4$
+zsoa#{tc4rM%|bRPnLwK5rhyfP?B51#cMu9+1T%aM(i=Njuw7p~ANE=zIN~jjDrvj#
+zaIe7wSLTzVE>DReZjX;`i^8rL9gR*!n;}=SFBw}YG3sBw6hR{p)60M+l3W@k)UwAg
+zcNlV~d%#a87Lv5{N_c`RoO#$E299{@%B_TSwI&s4pk3eb`UBVR9Ek9^-?p$JzoQlm
+zeFkgKr-Rt>IEf9Arz;T$!%eVMN?r@PDLOq#+@flpqHRJ%=xtW2pTR0$VSJ=4g4?vl
+z2m?5{L+j!gg#wCzilS<t;VxDuT#r;I!2YD@%uui?1;ag*6h(PT@mAhpdKao+F!v;v
+zGT$Rx`9#L(Imgv^F!T@5wR0@LmLi%GNvoN<<jAARdL-6Yg84DkRIo4+jA8{9R7vVS
+zRac>1&;ijuCt_fp>=?*gNbcVSS~E<ez6bxGH2mkJ8rBrPhPwI?8LZ=>I!vZI==Tfn
+CZltXM
+
+diff --git a/out/production/untitled5/Game.class b/out/production/untitled5/Game.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..16ee1f83990064e132db19bc50ce6112e944c38f
+GIT binary patch
+literal 8757
+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
+
+diff --git a/out/production/untitled5/GameOverPanel.class b/out/production/untitled5/GameOverPanel.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..7ca997b99685004afb054f8d7e2137e82d4af0a1
+GIT binary patch
+literal 2629
+zc$|G!TXR!Y6#jM-NE;4q6Rs^SgmOzmX%U42sYqG~6jP|QwzOXGG&zJodQwhKTBw5e
+zI|^PA@0SN&e9^I~BQuU~&N$Ba=(~=;z&FQn{MI=K=}jJT_TFo)Z|$|dwf5fm>7Vbu
+z2XGI*2%-YM0Q?#jVX;E^j6SZPZ!1pZ%xv3{UfneE3X3~(X3pNH;EOg71W}2q0D>Bp
+zKvP(HNFOzhjT@F{8z>rfUvAP+SQPE<cFn6b)Sy<Oin^43p-{3F)<jdXRhvFxx4E(&
+z-PE&&6?ZXV4a=}xK_ezvNSBKGNS;pp(P3A=Qo||<ShI|CC8Oxth@wtIJ=Q2JpQ-3J
+z2XkhoFyW*yTt%}+4QsKEQ5J38rsJ?1PF`o;eYVB)<6^d6LlZX8EM3SKEQQ+JQFn>N
+zG1{bIv-t9x<RXBm!m?R3c9v|rU{)fg5bVwC7b1zQo->2kf)=5Do5G6d{Oy|u#CMy9
+z?YN8FjS=YJXq{TXeO!{iTVqXkGD|&^QHVunMmsuIFb&g=H!mcVVA?h8#vZp!orRK_
+zDYBd_qFcr-2+OBK!@XcDgt$W@ZRZMRDp#}((;zubGxjsa>9%dQ1yicTeucVDJ$*LP
+zUx@Tt#+YvDViR%tM>6iz&?OnykI<^WApJGN&M~XRK}K-POAkqj^cZGI(1$b}7Id|X
+z7M-X9I5M}nQ~HRJ5271B!S!f3ien0uS+AejL8<xnaRIbf;y9@p)FrQsNcuHAD0P(X
+z?>EldRT#vH0ERRSOZQaIZW`9-_`w5$dsxFGc$BBe>2k}+TEaW~Cpx#!qy*h~OoNUQ
+z?voXJljkTDol#E_#r=sNfFKN<3LvZDG;;Jm%Y<#1F|6FU;V#0_<Xj)J*I5mDjJi49
+zGMr;3K@~6-z&Q;T*e>-8*8iZ)*;fp@uTZkmJZ{Txh3$0wv5_-IT6QgAJb(!e=W&5&
+zZLR@tBA#hIUz~GbJb3eP0FUz&O2-5-iHmZ$E-AFnBXj;?Tj=-&@f4m8;290i;yH#d
+zy_B@*Tww`Q={9+Fn3Bv=Ci9;%F0dCgyoi@rcyiZ8rkKApuEMHWv6wbd-jz2g=W7xx
+z<x>~HYvgF5)(_&c+}BrG!#-QLY)^Pagl{P{-thq5=3;*CcVee`fV6fMGEAT*#fXoV
+zMn?>*-@TH<sX|)M59n4-)}GLBpUxG<de-w0r$l!m>NTuW1#8q`udn-`Tf^xZck8S}
+z`eMf!eJCy(?gU~<NKX1}k3Qzb6LcFdnR6nZ6;!J@!g}5T6;OB+0gk+K`8-z0MdXZ!
+zy^&9bGxAMv#?9WESBEq5p}^bxz5}S=Irnqi5SxaIh5WliK3^Gum?~pw%wI+*R>lhc
+zRu9IuPN5;zGKENN+Y~m&Zeq(&xOo~Bx5i@MptX!0gEEHH&$XG5^4Ip3u}cJWxK~EH
+ziMz1-99TkN2@jSaEQG&i;1V7#aT|BQ!6gNk^l(YRsjD+^Ne`FwaNR@GxPJ;Mic++!
+z?T}Bjj9zh*^4z4t50ud-ldmyQ#zQi5)hEO0GBRbH`N|>hU4Ab)gjSQd8h&f}A0UL)
+z2%~|s^;ki|S7Iw){_UvaJ5-M(*6^xrz)3VBORS9uF4FP}OLUDz`UIQsB~ep+x_(3y
+zzn~ev(!+0P!JpWMztO4|p-t6byJ}*QuW|R7TQ<Ch>s-l9%C4N56u!clN$Gu*zK;*w
+zg5wVs+{e-0T88PC&AyJdo0uHpD#G7J{u-w7M9;T)vZajYTi6CKbMgv*uMXZohlfl!
+z$Yr#;iOb~pb=uy*T2GsFw6%`*3bk)gD-8M^23z^R4A@Ebb}`y^=DVA+J=lT0T*cYS
+v9XLVmPGKL4*zaT<A-0L^eu$4GJF@8I&e_N0P~lU~ncd#TdM-Y5%Juob_>G5{
+
+diff --git a/out/production/untitled5/GamePreparationPanel.class b/out/production/untitled5/GamePreparationPanel.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..612f1dc8545437158c49143e096c18eef546e124
+GIT binary patch
+literal 4282
+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
+
+diff --git a/out/production/untitled5/Main.class b/out/production/untitled5/Main.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..11f0dad2fb6420b1189a518304bee65ba936363a
+GIT binary patch
+literal 387
+zc${rdJx{|x41I3WrU`+T7Rt=lGLQv{p@;>kQ-Gl;2r*s4DO{Bg=}7y(m@0w958y{3
+zeAh~4z=NOs{QPWx|9pG_xWGw(790<5h&DQe{z9xoRER2%?$d?L8baqvRjRorIO9p;
+zp-b>@g{o#+lrn&4ruPW0;TUe}7fI;Fs*-ohGL`y4qy;mBxXwh82(3)LCEey#z43<F
+z3{SZ(t;uNo9PjR!H(FKsbdqpi=$!S#f7*m#UN3bfXUaI+6VHtbr!YU7Xo1X^oI|c6
+zMq+HAtwHa$z0bL0Nx}i=a3equeMTRL7;J|xtr>Hl@SfK2A9n_uZ4SC{|Csm~;>a2w
+HTjl5%fFDE+
+
+diff --git a/out/production/untitled5/MainFrame.class b/out/production/untitled5/MainFrame.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..2d3bdda38e5d3a0693bd4b23d14fc19b6117e698
+GIT binary patch
+literal 1925
+zc$|Gy+j1L45Iy77#gbQYY~o82n>Zv8c^zAT>_lK=W8|BH<QPj)h<Ttk%El}u?WVLV
+z1@agC2M>XOQWdKB06vQ1%xIBT!o`DTXSz@KIo&g@zy5yvCxCT)lf)RbI3hZthzU%8
+zZ+6Tdvfc~ZInUldXqin*Ahu;Yw!bZ)WtMA6j3W_8QpW^zfkfG~od6g2EWcvE<Sv>i
+z7JJaNj!9e+n5S>gdS<p8exc!d)`RC(%k*v65r||0?6i(|a9Kbn_SEw1m*$g(CH-eT
+z|E!KV%nQuWUvldz{M2gj+p(&yz+9#z<!8+oezxE?pSzCb_?x}ht2(Y>fqG@E`J>zR
+z1+IngJzLpy%yX;7m^j`QNLGBa<)4_2)ktCyT7rpg=y(q|>GS$NDlQF>o09H*9UtJf
+zK$>&~*YPPtI!84+KD(#*Wa?!d237>dZHLL7I^h$get%WoRUK=xMM>tZ*`Cb?$;c0N
+ze1wnLD$ndNN}NgKx{eKLj5gbzU6+=7I`Yz@nRYXdPX!kHTC5HwW_RndrzP8?V5>!%
+z^8WF|Zyy!+sz=OP6i89C)aKXBM%&VWNS-1U>S(`scvPiH(<r3iKBbV!63aVoH=kIo
+zYVR_q<;68>X3Li6z!>qrvpu3sMSo(op1G~2^;F<`s9Rx$`<>p+QWV1%{trZX>{YSf
+z(R3!%Qkfxj&Q}|{%XDTre47M#!+^<5*e_GWY_Fmk&jC3L=0Kg}wpW(T=bh3PY@@cf
+zYd0B1liEz2hXtm{KTycXt$HJvzhuR2x9Zk`Et{6^gVtpExWNk^gTN=?bjpXs0UwiZ
+zmESAa#1?&@Dcd&BJE8OE#Pj)ZpOh~~ee>#@B8LA9Tz7f;2^x36j`0S<n2O}5G_8xc
+z5$hsla5rU$E@tF%#rOk@kKf?>?^rU7->}rhE#oyZMx={7zbMi#xUTU(1pI%9;1bf9
+z;`C2rp6enmQ}_&4F-t*nENPyi7f>Kt?@7R(Do|h_2Z6i|m6x^wK}>;{RN!pS83fAR
+zA&$5vP{jQpMUGz?5tU*GX_6}RCUxElX@~|*7WfjSAVIdDfJMI=(Q$hy_}>D`I1Ylh
+ziIzk$V}*SirC(vpolqsQekCz=%d(OOI0<qsC>GA=ugLzacm_JMM1I8<kJNniHL|0m
+zIo7;BB)j)e5;(nxDmO}XkI2e}RJl>AO;T+QQEdcN)r+X^j#BLq`S3!jyQ5SEQtb^<
+y<pZi39{rap^J;|ZkfZi>e=Jr5WJ+TL`O9emWiKSnsR18)gk<Atq8=+bXa4|+twnAC
+
+diff --git a/out/production/untitled5/Map.class b/out/production/untitled5/Map.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..6abb70a6002d951232ec7b56b7f6155c06643d4d
+GIT binary patch
+literal 1402
+zc$|$?O>Y}j6g|%~&e)Sl>ez9=JcdF7o!G?z6G~dQX`6(!L8d7UGD6vOVo&2~CU!I)
+zH|*F%ED#GsB$h1LutuUO0;#)hy5}#ze<%^<yf-EZhy^p!d-vnrd(S=Z&OH0`=O+MW
+z@V<!zGy}SYB!&bs58Q|Dbl`S2rdQS<c+E&)=!)O*qd5W1nQ9nFQCM4BPQ%2o0n5UO
+zGJW7~bKP>crQ?K!48{b^_0Vr_e(blRwt!GEISb>`HLP5>Jb$AdrEpTfn3!3dy|Hk~
+z#A%!{aMnTrw!o+Y<nBb%3*Dd_5>Cr&c3Ymnq*FfvyBdXlXQMV%|L5_ViI?!QfpZpK
+z!K(tfL-)<l-ERBMUUg9*)$^i3_MG$Y3{wr6W75KFcwJ!Rz8?g4yZuh<t|BMxEUQN{
+z;|Po&2G6@aze!ZxO;5jm9qjx(%97*@0=lylXRTP6#+%GS0P$I-IEEm$5kd-8$<UH|
+zWaNy6cNCsh=<XcDlXN5&mRL|6ov8aA?{<G{-3vc**8^Iz^={J*8gA%IePA4Fc7y&_
+zhZh)jcNiSC{T_4Gd8sw3G*UI<LzG5VBe%Ip=OA2{AOubyLw-bWO~OfS40M6~e;#5|
+zaxgDvqTvR8iOE@xTS-2Q4d!aMA2z)uUzSX<dPOGUy~+^=GzdA0l!P2UwU4V^dXl)v
+z^<8SeQBQLJu=E(BRIs1INIXJXn=6)nMEc2haI}khUYCkirJ9pcv6|QQm0ewY|Kj&u
+zjq9(av4m|0k1$#q!#4#A*&kG?S*|5Q0@BdAk75{SV8J1{D)(9Ha|C#k(C#3MOX@RB
+z!sdIKHl4l-YLqky5?62)P|_T2LP^&sCBUI#X8i>NbOWXkbRJ+>JV)U<6AIkGeB86J
+z!7rT0_q40_pvx}?4XYk^q-0l%m2YvsoX!7)Q~M~ErGK=YxpPm(WZRkQJ!z0~#>|-e
+zm?-~(^Pgm=9;396H_F+!{%73VioxC81lQgXYZWpB<hh>YFW?j=xL#m~w{aG0{28>!
+z(C74h$unQ$oMNuTwnp%oVooC`Un%C~IP4uVw}%BRk_gFH4#@)~!~yC01D}$nn5p-$
+zG?<PC(@3UF$w;AU7gr>}gaR1P*#s|k^02tH{$0pa#f6eC4`7(;qU8kMQhApD0*Xou
+AN&o-=
+
+diff --git a/out/production/untitled5/MouseHandler.class b/out/production/untitled5/MouseHandler.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..258c567a97a5e7c82ee0988f64c321f62de62900
+GIT binary patch
+literal 2180
+zc$|e)-%}e^6#gy=SrRrtkx~$7OSN?qY9lR0+q5XZOAReTjZj-*NiNC4W&@iA9iMgj
+z=6gHijN^+V<BKyA9UmN@{gXQ5k8^G|Kfox%u=m_^&i&4JzI$^2`0Ll-0E}TTf))fc
+z1a-6`B+#{O9+(N+baIJ@o7*zu354!gj^#}V1dLcZj5dTdM0B)67tj}r`z3kLbh5T|
+z1%f%VAn8PEp4Map9q821rQ-~`DLAi!dQN)NMJH={R?!jYF=DBD%@xnJoLsUEJp$1w
+zxm9%K`lMALUj)54r=d?rKVCh?vvP*2%DsKlE(x49QYX7e#vVs7h#?K<bzHzjfqs=@
+ze(ELUfpoltYGjs8ZbN#js^10f_mYm+@H!RPvfL5}!~%m|(eVZ&arPSL#dO5$d24OB
+zN_Lff2d?Qz;4KoMbWDI_Z2kT#I$zgugYmSI%uxO+`)=wOZ}6=}@D6TixUD0JI|3bb
+zs72Gu6S>l!%N-dru^A>Yq2pb=C(uTur%apW>Z{(szGvBql;!NmY|1KmbbnKr)-a=E
+zmiz2!mc$jT&n2hM>$rynl8vCbt%caXuR+86bb<><a37009^j#B#!Ji0YK3Q-Lm%i^
+zZU~W>k4U){NwPV)bq3Io78q=Hi_A+pJda_cGKn!t4Ne!cG=81LT|U?^Y)bc$xoMN9
+zJ5|h>cG`3;-uup=m$yipj#T4-Cy7FV_tUnOApr!=`<K^jj#O1aSOfo)Q$<{IWvRr7
+z(G}0k>@1qQK9Q&jFH2jRDjwXV-uWlS8qjfJk<Tf*g(}jl<4Kn@+bi48ERT0#x|KP9
+ze#51@9i)3oH-y(3!emEQiu-Ox&RNXmOrsdrxG4<NOtwJaLwY`1_)VZ!rG<YkYQ5pF
+zaep0GYlQM!@ezGjX*Wmy7WT$}hKP?GLHkkVuF<yx0s6KhNVs7{@tAhKm27;BCxEiJ
+zDhYw7_{7J&sSp5BhYC>$=x%@zH3)%qY$yn`265oiip76|Rz|e@l`_sg$6$P<jDaHz
+z^LqIR28X-Jev?ZDRH<I-j=!BaM}K|v-t@!3Ktt(Rt#r&Uy{S$MgUn2ogGf^240TxL
+zFrqko?Q<CQIgC+wl>UdaH6u@7b{pB6k>7as3*P?f?%;Dg2}}%CAn%qj`7NgX%}^P0
+zzvKSxV1KZN<aM>>2kmENq?EIQRdX(V5fI<~eWXNKIVQq&H3}C<go`A?Fj<$7qQO|A
+z5!k?G?BWW(qzCi`?Y|)zzQ<K1&=_^RO9PXIr0$pLf!Lyq0G)k`99b;iVNJfn2Kk~0
+z{E1~DUSjbjO{GBo^m!OPWge{4A;wRE*d_rg5DB#hT3Og1PQct!FnT4yhY{F;?H``-
+z=P?xL>8q27DDPc5GtodKR3j2nKSnNGXiCI5No2Aq5vMs3<0O$;Iy3hlMB+Y?qB^tt
+E4~v_W{r~^~
+
+diff --git a/out/production/untitled5/SettingPanel.class b/out/production/untitled5/SettingPanel.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..c092dccb18cd552cde79d973ce02c5f4da4c795b
+GIT binary patch
+literal 2817
+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
+
+diff --git a/out/production/untitled5/StartPanel.class b/out/production/untitled5/StartPanel.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..8e5c177a13e198d07e3cac328dbe7e141423588d
+GIT binary patch
+literal 2038
+zc$|He&r=&^7{|Xa32a!Fl7ycv;a90`5?WFVO`)MRKm()(8k-gbwfd55>C$8uHXA6O
+z98Vs-dT_>*y*cBI2FA`f9v#P1XT0ja;L(%g^X|S%=wJ`oclUXp&-43z^UL2q{0LwY
+z`zo5?Q{dOoj24FQHs9mV64iaf+)CWdb5k!fw9FW$;oN5MMPsWf0%%pBYG{MTpcWi%
+zJ5o`p>Q2G<SZ8RCX0x8|84Vo>GPKfOjvrVxhoL{36MhnW-${6~Wp45<-A;K-SVJee
+z7&KxQtYWRoH_K$yAKmcwdo=WlXf<2kt?5-yM{Jzca1Q+pU5y)AbImYI*1jA6hJpcx
+z&J$_Q)f~q%0~lgB<EAsbqVEqc@`|n^f)P=g^9<cG=rSj!;MjyxxUJ;%f`&J6QG_dC
+zVg*V-?i4R65oT0F3~`Ewmr4xrhHA`Pl^x5}O(zvQO(^2Itl<jAy@JkJHM3Nu!c)1u
+zf=3V*k2f`3!vsT!Jj@my!!mP5)zMAeW;oyAPv0Z6iIW<XRRGr++Gfk;;rn{gvP)Hw
+z<_!%~B2AT-%TgS`O>(|Opk*Hjof!?cgpTsWlLhb=eH3)Zp&AH<Sq*cpLe-N6aEBV3
+zd1g3bcR|CV*!AlqP?5!51#fG}VVU9FsX=GNI~8M#CeNzbMXGyOG}h3mdz;&OQB>|8
+z@(SM3a32MR;HwHW<uo$9Tz#d{5|3@Dc!*U6YZ~6gIyqeChPhz7jcz07S(BP?3is{g
+z{=dzXg7+vQF%WrM-{CeFLA%FA#Rh!B>LU#w;v<?pD#^TMQV-no#L#<UFieMxy4_K*
+zNy8?KDs6FLOUGjcTcU<fPNY~kpw3pr0m=$`n_=L!6F{2tR*53$$dSvHT4htWA9!al
+zoU@9&yvl7ud`qF<p>|V9x#P<qMKE`b=5_nAWmj~X^r8QmJhzFI7y~0~k=H3veaT7j
+z=`!Du&Q-7P3x@dUIF4XkSiuNQRTCHtI>b%ln9{Y^B<9#%Z^?B|u8VSI;x?q`Q-J+J
+z?~K;z_#s$4<ev)pe03;sR!4i>Uq>ijM>qZY*5WS^Sq~2$V)%QE#^c{%w2n(_Vhyoh
+zgQXC@3g+t=69Tf35G!$4J#5m&k^)OgEJ;`hFB`a|<dVnSw9BOgmy%pca4g-xr6iX+
+z=5D)OT5xH}rCsiu1}-hR^f5Q@av8y8B$p9fQ>1~*NG>C|Z{3oX>G>&!>8Zj`{~c!_
+zF8Ox!(OZQ6B1RCxIKsF=(j{~uk8V0?y)@H(FmV>2(9QlC`tdmi@FfQEHHL6R_I@Jr
+zXN=-ET)^+t;6JH_f8i2!EXLaDlI_75i{di7iYsi2JX9zG&1)#xwdjjs2fJRg@e)3Y
+z71$lCW6A5_$`|N7!h;vsSU<%3b$sv~59Mys-EDb}J5rGPS1=(3=?0z?Uv&9yxtno!
+z72gp`qDVfsNEgvc&udhc2}*Mk30y~-%CbUJ`v}vdbCUv|aTDqBf|ZGgHyc$-#i4fv
+Q&4a<<K!`qTZU^@M0T#>PCIA2c
+
