@@ -2,8 +2,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.util.LinkedList;
 
 public class MainFrame extends JFrame implements ActionListener {
+    private static LinkedList<Data> datas = new LinkedList<>();
     private static MainFrame instance;
     private StartPanel startPanel;
     public static final int MENU_WIDTH = 1080;
@@ -13,6 +15,8 @@ public class MainFrame extends JFrame implements ActionListener {
     private static boolean aim = false;
 
     public MainFrame() {
+        Resources.init();
+
         this.setSize(1080 , 771);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
@@ -71,6 +75,13 @@ public class MainFrame extends JFrame implements ActionListener {
         return instance;
     }
 
+    public static LinkedList<Data> getDatas() {
+        return datas;
+    }
+
+    public static void setDatas(LinkedList<Data> datas) {
+        MainFrame.datas = datas;
+    }
 }
 
 

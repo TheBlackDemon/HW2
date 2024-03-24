@@ -51,7 +51,7 @@ public class StartPanel extends JPanel implements ActionListener {
             MainFrame.getInstance().setContentPane(new GamePreparationPanel());
         } else if (e.getSource().equals(allRecords)) {
         } else if (e.getSource().equals(history)) {
-            
+            MainFrame.getInstance().setContentPane(new HistoryPanel());
         } else if (e.getSource().equals(setting)) {
             MainFrame.getInstance().setContentPane(new SettingPanel());
         } else if (e.getSource().equals(exit)) {

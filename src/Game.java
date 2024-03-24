@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -83,7 +85,7 @@ public class Game extends JPanel implements Runnable {
             SpecialItem specialItem = specialItems.get(i);
             specialItem.setY(specialItem.getY() + specialItem.getBrick().getHeight());
         }
-        for (int i = 0; i < 4; i++){
+        for (int i = 0; i < 3; i++){
             Item item = new Item(new Random().nextInt(MainFrame.MENU_WIDTH - 30) +15 ,
                     new Random().nextInt((MainFrame.MENU_HEIGHT - 30)/2) +15 , 15 ,
                     new Random().nextInt(5), this);
@@ -105,6 +107,8 @@ public class Game extends JPanel implements Runnable {
         return false;
     }
     public void init(){
+        Resources.setMute(false);
+        Resources.getThemeSong().play();
         if (state.equalsIgnoreCase("Easy")){
             numberOfBrick = 1;
             rate = 0.6;
@@ -230,11 +234,16 @@ public class Game extends JPanel implements Runnable {
         }
     }
     public void gameOver(){
+        if (MainFrame.isSave() && !gameOver){
+            LocalDateTime date = java.time.LocalDateTime.now();
+            Data data = new Data((int)elapsedTime , name , date , score );
+            MainFrame.getDatas().add(data);
+        }
+        if (!gameOver){
+            Resources.getThemeSong().stop();
+        }
         paused = true;
         gameOver = true;
-        if (MainFrame.isSave()){
-
-        }
     }
     public void update() throws AWTException {
         if(!paused) {
@@ -300,8 +309,8 @@ public class Game extends JPanel implements Runnable {
                 }else {
                     secondX = getMouseHandler().getFirstX();
                     secondY = getMouseHandler().getFirstY();
-                    vecX = new Random().nextInt(10);
-                    vecY = new Random().nextInt(10);
+                    vecX = -new Random().nextInt(10);
+                    vecY = -new Random().nextInt(10);
                     double norm = Math.sqrt(Math.pow(vecX,2)+Math.pow(vecY,2));
                     if (norm != 0) {
                         vecX = vecX / norm;
