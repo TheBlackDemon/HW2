@@ -6,6 +6,9 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class Game extends JPanel implements Runnable {
+    private LinkedList<SpecialItem> specialItems = new LinkedList<>();
+
+    private LinkedList<Item> items = new LinkedList<>();
     private int score = 0;
 
     private boolean paused = false;
@@ -27,12 +30,27 @@ public class Game extends JPanel implements Runnable {
     private long startTime;
     private long endTime;
     private long elapsedTime;
-    private long remainingTime;
     private long sigmaTime = 0;
     private MouseHandler mouseHandler;
     private double secondX;
     private double secondY;
     private boolean gameOver = false;
+    private int addBall = 0;
+    private boolean moveFast = false;
+    private int firstTimeMoveFast;
+    private boolean stopMoveFast = false;
+    private boolean strength = false;
+    private int firstTimeStrength;
+    private boolean stopStrength = false;
+    private boolean deez = false;
+    private boolean deezRound = false;
+    private boolean zelzele = false;
+    private int firstTimeZelzele;
+    private boolean stopZelzele = false;
+    private boolean noor = false;
+    private int firstTimeNoor;
+    private boolean stopNoor = false;
+
     public Game(Color color , String name , String state){
         this.color = color;
         this.name = name;
@@ -47,30 +65,60 @@ public class Game extends JPanel implements Runnable {
     }
     public void changeRound(){
         condition = "Before_Aiming";
-
         round++;
-        for (int i = 0; i < round; i++){
+        if (this.isDeez()){
+            this.setDeezRound(true);
+            this.setDeez(false);
+        } else if (this.isDeezRound()) {
+            this.setDeezRound(false);
+        }
+        for (int i = 0; i < round + addBall; i++){
             balls.add(new Ball(lastX , MainFrame.MENU_HEIGHT - 150+15 , 15 , this , i , color));
         }
         for (int i = 0; i < bricks.size(); i++){
             Brick brick = bricks.get(i);
             brick.setY(brick.getY() + brick.getHeight());
         }
+        for (int i = 0; i < specialItems.size(); i++){
+            SpecialItem specialItem = specialItems.get(i);
+            specialItem.setY(specialItem.getY() + specialItem.getBrick().getHeight());
+        }
+        for (int i = 0; i < 4; i++){
+            Item item = new Item(new Random().nextInt(MainFrame.MENU_WIDTH - 30) +15 ,
+                    new Random().nextInt((MainFrame.MENU_HEIGHT - 30)/2) +15 , 15 ,
+                    new Random().nextInt(5), this);
+            while (accident(item)){
+                item = new Item(new Random().nextInt(MainFrame.MENU_WIDTH - 30) +15 ,
+                        new Random().nextInt((MainFrame.MENU_HEIGHT - 30)/2) +15 , 15 ,
+                        new Random().nextInt(4), this);
+            }
+            items.add(item);
+        }
+    }
+    private boolean accident(Item item){
+        for (int i = 0; i < bricks.size(); i++){
+            Brick brick = bricks.get(i);
+            if (item.getBounds().intersects(brick.getBounds())){
+                return true;
+            }
+        }
+        return false;
     }
     public void init(){
         if (state.equalsIgnoreCase("Easy")){
-            numberOfBrick = 2;
+            numberOfBrick = 1;
             rate = 0.6;
         } else if (state.equalsIgnoreCase("Normal")) {
-            numberOfBrick = 3;
+            numberOfBrick = 2;
             rate = 1.1;
         } else if (state.equalsIgnoreCase("Hard")) {
-            numberOfBrick = 4;
+            numberOfBrick = 3;
             rate = 1.6;
         }
         for (int i = 0; i < numberOfBrick; i++){
+            int j = bricks.size();
             Brick brick = new Brick(new Random().nextInt(MainFrame.MENU_WIDTH/numberOfBrick - 50)+
-                    MainFrame.MENU_WIDTH/numberOfBrick*i, 0 , 60 , 40 , 1 , this);
+                    MainFrame.MENU_WIDTH/numberOfBrick*i, 0 , 60 , 40 , 1 ,j ,this);
             bricks.add(brick);
             minBrick = brick;
         }
@@ -161,6 +209,12 @@ public class Game extends JPanel implements Runnable {
         for (int i = 0 ; i < bricks.size(); i++) {
             bricks.get(i).paint(g);
         }
+        for (int i = 0; i < items.size(); i++) {
+            items.get(i).paint(g);
+        }
+        for (int i = 0; i < specialItems.size(); i++) {
+            specialItems.get(i).paint(g);
+        }
         if(condition == "Aiming" && MainFrame.isAim()){
             g.setColor(Color.BLACK);
             g.fillOval((int) (getMouseHandler().getFirstX()-8), (int) (getMouseHandler().getFirstY()-8), 16 , 16);
@@ -193,11 +247,24 @@ public class Game extends JPanel implements Runnable {
             for (int i = 0; i < bricks.size(); i++) {
                 bricks.get(i).update();
             }
-
+            for (int i = 0; i < items.size(); i++) {
+                items.get(i).update();
+            }
+            for (int i = 0; i < specialItems.size(); i++) {
+                specialItems.get(i).update();
+            }
+            if (noor && !stopNoor){
+                noor = false;
+                stopNoor = true;
+                firstTimeNoor = (int) getElapsedTime();
+            }
+            if (stopNoor && getElapsedTime()-firstTimeNoor>=10){
+                stopNoor = false;
+            }
             if(condition == "Aiming" && MainFrame.isAim()){
                 double vecX = 0;
                 double vecY = 0;
-
+                if (!this.isDeezRound()){
                 PointerInfo pointerInfo = MouseInfo.getPointerInfo();
                 Point screenLocation = pointerInfo.getLocation();
                 Point componentLocation = MainFrame.getInstance().getLocationOnScreen();
@@ -211,15 +278,15 @@ public class Game extends JPanel implements Runnable {
                     vecX = (-(xRelativeToComponent - secondX) * 8 / norm);
                     vecY = (-(yRelativeToComponent - secondY) * 8 / norm);
                     boolean accident = false;
-                    while (! accident){
+                    while (!accident) {
                         if ((secondX <= 15 || secondX >= MainFrame.MENU_WIDTH - 30 ||
-                                secondY <= 15 || secondY >= MainFrame.MENU_HEIGHT - 50)){
+                                secondY <= 15 || secondY >= MainFrame.MENU_HEIGHT - 50)) {
                             vecX = 0;
                             vecY = 0;
                             accident = true;
-                        }else {
-                            for(Brick brick : getBricks()){
-                                if((new Rectangle((int) (secondX - 8), (int) (secondY - 8), 16 , 16)).getBounds().intersects(( brick).getBounds())){
+                        } else {
+                            for (Brick brick : getBricks()) {
+                                if ((new Rectangle((int) (secondX - 8), (int) (secondY - 8), 16, 16)).getBounds().intersects((brick).getBounds())) {
                                     vecX = 0;
                                     vecY = 0;
                                     accident = true;
@@ -228,6 +295,36 @@ public class Game extends JPanel implements Runnable {
                         }
                         secondX += vecX;
                         secondY += vecY;
+                    }
+                }
+                }else {
+                    secondX = getMouseHandler().getFirstX();
+                    secondY = getMouseHandler().getFirstY();
+                    vecX = new Random().nextInt(10);
+                    vecY = new Random().nextInt(10);
+                    double norm = Math.sqrt(Math.pow(vecX,2)+Math.pow(vecY,2));
+                    if (norm != 0) {
+                        vecX = vecX / norm;
+                        vecY = vecY / norm;
+                        boolean accident = false;
+                        while (!accident) {
+                            if ((secondX <= 15 || secondX >= MainFrame.MENU_WIDTH - 30 ||
+                                    secondY <= 15 || secondY >= MainFrame.MENU_HEIGHT - 50)) {
+                                vecX = 0;
+                                vecY = 0;
+                                accident = true;
+                            } else {
+                                for (Brick brick : getBricks()) {
+                                    if ((new Rectangle((int) (secondX - 8), (int) (secondY - 8), 16, 16)).getBounds().intersects((brick).getBounds())) {
+                                        vecX = 0;
+                                        vecY = 0;
+                                        accident = true;
+                                    }
+                                }
+                            }
+                            secondX += vecX;
+                            secondY += vecY;
+                        }
                     }
                 }
 
@@ -257,8 +354,9 @@ public class Game extends JPanel implements Runnable {
 
             if (minBrick.getY() > 75) {
                 for (int i = 0; i < numberOfBrick; i++) {
+                    int j = bricks.size();
                     Brick brick = new Brick(new Random().nextInt(MainFrame.MENU_WIDTH/numberOfBrick - 50)+
-                            MainFrame.MENU_WIDTH/numberOfBrick*i, 0, 60, 40, (int) (round * rate), this);
+                            MainFrame.MENU_WIDTH/numberOfBrick*i, 0, 60, 40, (int) (round * rate),j ,this);
                     bricks.add(brick);
                     minBrick = brick;
                 }
@@ -308,5 +406,137 @@ public class Game extends JPanel implements Runnable {
 
     public long getElapsedTime() {
         return elapsedTime;
+    }
+
+    public LinkedList<Item> getItems() {
+        return items;
+    }
+
+    public int getAddBall() {
+        return addBall;
+    }
+
+    public void setAddBall(int addBall) {
+        this.addBall = addBall;
+    }
+
+    public boolean isMoveFast() {
+        return moveFast;
+    }
+
+    public void setMoveFast(boolean moveFast) {
+        this.moveFast = moveFast;
+    }
+
+    public void setElapsedTime(long elapsedTime) {
+        this.elapsedTime = elapsedTime;
+    }
+
+    public int getFirstTimeMoveFast() {
+        return firstTimeMoveFast;
+    }
+
+    public void setFirstTimeMoveFast(int firstTimeMoveFast) {
+        this.firstTimeMoveFast = firstTimeMoveFast;
+    }
+
+    public boolean isStopMoveFast() {
+        return stopMoveFast;
+    }
+
+    public void setStopMoveFast(boolean stopMoveFast) {
+        this.stopMoveFast = stopMoveFast;
+    }
+
+    public boolean isStrength() {
+        return strength;
+    }
+
+    public void setStrength(boolean strength) {
+        this.strength = strength;
+    }
+
+    public int getFirstTimeStrength() {
+        return firstTimeStrength;
+    }
+
+    public void setFirstTimeStrength(int firstTimeStrength) {
+        this.firstTimeStrength = firstTimeStrength;
+    }
+
+    public boolean isStopStrength() {
+        return stopStrength;
+    }
+
+    public void setStopStrength(boolean stopStrength) {
+        this.stopStrength = stopStrength;
+    }
+
+    public boolean isDeez() {
+        return deez;
+    }
+
+    public void setDeez(boolean deez) {
+        this.deez = deez;
+    }
+
+    public boolean isDeezRound() {
+        return deezRound;
+    }
+
+    public void setDeezRound(boolean deezRound) {
+        this.deezRound = deezRound;
+    }
+
+    public LinkedList<SpecialItem> getSpecialItems() {
+        return specialItems;
+    }
+
+    public boolean isZelzele() {
+        return zelzele;
+    }
+
+    public void setZelzele(boolean zelzele) {
+        this.zelzele = zelzele;
+    }
+
+    public int getFirstTimeZelzele() {
+        return firstTimeZelzele;
+    }
+
+    public void setFirstTimeZelzele(int firstTimeZelzele) {
+        this.firstTimeZelzele = firstTimeZelzele;
+    }
+
+    public boolean isStopZelzele() {
+        return stopZelzele;
+    }
+
+    public void setStopZelzele(boolean stopZelzele) {
+        this.stopZelzele = stopZelzele;
+    }
+
+    public boolean isNoor() {
+        return noor;
+    }
+
+    public void setNoor(boolean noor) {
+        this.noor = noor;
+    }
+
+    public int getFirstTimeNoor() {
+        return firstTimeNoor;
+    }
+
+    public void setFirstTimeNoor(int firstTimeNoor) {
+        this.firstTimeNoor = firstTimeNoor;
+    }
+
+    public boolean isStopNoor() {
+        return stopNoor;
+    }
+
+    public void setStopNoor(boolean stopNoor) {
+        this.stopNoor = stopNoor;
     }
 }

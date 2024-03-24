@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Random;
 
 public class Ball {
     private boolean firstMove = false;
@@ -10,6 +11,7 @@ public class Ball {
     private double radius;
     private Game game;
     private int num;
+    private int power = 1;
     public Ball(double x, double y , double r , Game game , int num , Color color) {
         this.x = x;
         this.y = y;
@@ -20,9 +22,36 @@ public class Ball {
     }
     public void paint(Graphics g){
         g.setColor(color);
+        if (game.isStopNoor() ){
+            g.setColor(new Color(new Random().nextInt(255),
+                    new Random().nextInt(255),
+                    new Random().nextInt(255)));
+        }
         g.fillOval((int) (x - radius), (int) (y - radius), (int) (2 * radius), (int) (2 * radius));
     }
     public void update(){
+        if (game.isStrength() && !game.isStopStrength()){
+            power = 2;
+            game.setStrength(false);
+            game.setStopStrength(true);
+            game.setFirstTimeStrength((int) game.getElapsedTime());
+        }
+        if (game.isStopStrength() && game.getElapsedTime()-game.getFirstTimeStrength()>=15){
+            power = 1;
+            game.setStopStrength(false);
+        }
+        if (game.isMoveFast() && !game.isStopMoveFast()){
+            vecX = vecX*2;
+            vecY = vecY*2;
+            game.setMoveFast(false);
+            game.setStopMoveFast(true);
+            game.setFirstTimeMoveFast((int) game.getElapsedTime());
+        }
+        if (game.isMoveFast() && game.getElapsedTime()-game.getFirstTimeMoveFast()>=15){
+            vecX = vecX/2;
+            vecY = vecY/2;
+            game.setStopMoveFast(false);
+        }
         if (!firstMove && correctDistance()){
             firstMove = true;
         }
@@ -46,7 +75,8 @@ public class Ball {
 
         for(Brick brick : game.getBricks()){
                 if(this.getBounds().intersects(( brick).getBounds())){
-                    (brick).setNumber((brick).getNumber()-1);
+
+                    (brick).setNumber((brick).getNumber()-power);
                     vecX = -vecX;
                     vecY = -vecY;
                 }
